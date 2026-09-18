@@ -3,23 +3,23 @@
 $animal = (string) "";
 
 $respostaMamifero = (string) readline("\nÉ mamífero? (sim/nao): ");
-$ehMamifero = (bool) ($respostaMamifero === "sim");
+$Mamifero = (bool) ($respostaMamifero === "sim");
 
-if ($ehMamifero) {
+if ($Mamifero) {
     $respostaQuadrupede = (string) readline("\nÉ quadrúpede? (sim/nao): ");
-    $ehQuadrupede = (bool) ($respostaQuadrupede === "sim");
+    $Quadrupede = (bool) ($respostaQuadrupede === "sim");
 
-    if ($ehQuadrupede) {
+    if ($Quadrupede) {
         $respostaCarnivoro = (string) readline("\nÉ carnívoro? (sim/nao): ");
-        $ehCarnivoro = (bool) ($respostaCarnivoro === "sim");
+        $Carnivoro = (bool) ($respostaCarnivoro === "sim");
 
-        if ($ehCarnivoro) {
+        if ($Carnivoro) {
             $animal = (string) "leão";
         } else {
             $respostaHerbivoro = (string) readline("\nÉ herbívoro? (sim/nao): ");
-            $ehHerbivoro = (bool) ($respostaHerbivoro === "sim");
+            $Herbivoro = (bool) ($respostaHerbivoro === "sim");
 
-            if ($ehHerbivoro) {
+            if ($Herbivoro) {
                 $animal = (string) "\ncavalo";
             } else {
                 $animal = (string) "\nnão identificado!";
@@ -27,27 +27,27 @@ if ($ehMamifero) {
         }
     } else {
         $respostaVoador = (string) readline("\nEle Voa? (sim/nao): ");
-        $ehVoador = (bool) ($respostaVoador === "sim");
+        $Voador = (bool) ($respostaVoador === "sim");
 
-        if ($ehVoador) {
+        if ($Voador) {
             $animal = (string) "morcego";
         } else {
             $respostaAquatico = (string) readline("\nÉ aquático? (sim/nao): ");
-            $ehAquatico = (bool) ($respostaAquatico === "sim");
+            $Aquatico = (bool) ($respostaAquatico === "sim");
 
-            if ($ehAquatico) {
+            if ($Aquatico) {
                 $animal = (string) "\nbaleia";
             } else {
                 $respostaBipede = (string) readline("\nÉ bípede? (sim/nao): ");
-                $ehBipede = (bool) ($respostaBipede === "sim");
+                $Bipede = (bool) ($respostaBipede === "sim");
 
-                if ($ehBipede) {
+                if ($Bipede) {
                     $animal = (string) "homem";
                 } else {
                     $respostaArboreo = (string) readline("\nVive em árvores? (sim/nao): ");
-                    $ehArboreo = (bool) ($respostaArboreo === "sim");
+                    $Arboreo = (bool) ($respostaArboreo === "sim");
 
-                    if ($ehArboreo) {
+                    if ($Arboreo) {
                         $animal = (string) "\nmacaco";
                     } else {
                         $animal = (string) "\nnão identificado";
@@ -57,25 +57,25 @@ if ($ehMamifero) {
         }
     }
 } 
-elseif ($ehMamifero === false) {
+elseif ($Mamifero === false) {
     $respostaAve = (string) readline("\nÉ uma ave? (sim/nao): ");
-    $ehAve = (bool) ($respostaAve === "sim");
+    $Ave = (bool) ($respostaAve === "sim");
 
-    if ($ehAve) {
+    if ($Ave) {
         $respostaNaoVoadora = (string) readline("\nÉ não voadora? (sim/nao): ");
         $ehNaoVoadora = (bool) ($respostaNaoVoadora === "sim");
 
-        if ($ehNaoVoadora) {
+        if ($NaoVoadora) {
             $respostaTropical = (string) readline("\nÉ tropical? (sim/nao): ");
-            $ehTropical = (bool) ($respostaTropical === "sim");
+            $Tropical = (bool) ($respostaTropical === "sim");
 
-            if ($ehTropical) {
+            if ($Tropical) {
                 $animal = (string) "avestruz";
             } else {
                 $respostaPolar = (string) readline("\nÉ polar? (sim/nao): ");
-                $ehPolar = (bool) ($respostaPolar === "sim");
+                $Polar = (bool) ($respostaPolar === "sim");
 
-                if ($ehPolar) {
+                if ($Polar) {
                     $animal = (string) "pinguim";
                 } else {
                     $animal = (string) "não identificado";
@@ -83,9 +83,9 @@ elseif ($ehMamifero === false) {
             }
         } else {
             $respostaAquatico = (string) readline("\nÉ aquática? (sim/nao): ");
-            $ehAquatico = (bool) ($respostaAquatico === "sim");
+            $Aquatico = (bool) ($respostaAquatico === "sim");
 
-            if ($ehAquatico) {
+            if ($Aquatico) {
                 $animal = (string) "pato";
             } else {
                 $respostaCarnivoro = (string) readline("\n É carnívora? (sim/nao): ");
@@ -100,9 +100,9 @@ elseif ($ehMamifero === false) {
         }
     } else {
         $respostaReptil = (string) readline("\nÉ réptil? (sim/nao): ");
-        $ehReptil = (bool) ($respostaReptil === "sim");
+        $Reptil = (bool) ($respostaReptil === "sim");
 
-        if ($ehReptil) {
+        if ($Reptil) {
             $respostaCasco = (string) readline("\nTem casco? (sim/nao): ");
             $temCasco = (bool) ($respostaCasco === "sim");
 
@@ -110,9 +110,9 @@ elseif ($ehMamifero === false) {
                 $animal = (string) "tartaruga";
             } else {
                 $respostaAquatico = (string) readline("\nÉ aquático? (sim/nao): ");
-                $ehAquatico = (bool) ($respostaAquatico === "sim");
+                $Aquatico = (bool) ($respostaAquatico === "sim");
 
-                if ($ehAquatico) {
+                if ($Aquatico) {
                     $animal = (string) "crocodilo";
                 } else {
                     $respostaSemPatas = (string) readline("\nNão tem patas? (sim/nao): ");
